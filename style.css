@@ -1,0 +1,22 @@
+body{
+    background: linear-gradient(rgb(249, 85, 60) 0%, rgb(252, 73, 198) 100% );
+    color: rgb(16, 241, 237);
+}
+.heading{
+    width: 80%;
+    font-size: 22px;
+}
+.object_names{
+    color: rgb(240, 240, 19);
+}
+#camera{
+    border: 2px dashed rgb(232, 225, 164);
+    width: 350px;
+    height: 300px;
+}
+#display_object{
+    color: rgb(255, 247, 1);
+}
+#display_accuracy{
+    color: rgb(0, 255, 229);
+}
