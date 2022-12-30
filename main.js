@@ -1,4 +1,3 @@
-
 webcam.set({
     width:350,
     height:300,
@@ -16,4 +15,9 @@ function take_snapshot()
 });}
 
 console.log("ml5 version= ",ml5.version);
-classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/train/image',modelLoaded);
+classifier = ml5.imageClassifier('https://drive.google.com/file/d/13pcv3gAQ-ad4zcdvFw8WvX1Kb1D28cDM/view',modelLoaded);
+
+function check() {
+    img=document.getElementById("image");
+    classifier.classify(img,gotResult);
+}

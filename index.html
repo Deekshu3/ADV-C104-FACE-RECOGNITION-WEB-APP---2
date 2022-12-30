@@ -1,12 +1,12 @@
  
 <html>
   <head>
-    <title>Image recognition</title>
+    <title>Face recognition web app</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
 
    <link rel="stylesheet" href="style.css">
@@ -17,19 +17,19 @@
   <div class="container">
     
     <center>
-      <h3 class="btn btn-default heading">IMAGE RECOGNITION</h3>
+      <h3 class="btn btn-default heading">Face recognition web app</h3>
       <br><br>
 
       <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
       <b class="object_names">
         <hr>
-        Watch
+        Mom
         <hr>
-        Phone
+        Dad
         <hr>
-        Spoon
+        Me
         <hr>
-        Water Bottle
+        My sister
         <hr>
       </b>
       <label>Webcam View - </label>
@@ -42,8 +42,8 @@
       <button class="btn btn-success">Identify Image</button>
       <br><br>
       
-      <p style="font-size: 22px;">Object : <span id="display_object"></span></p>
-      <p style="font-size: 22px;">Accuracy : <span id="display_accuracy"></span></p>
+      <p style="font-size: 22px;">Object : <span id="display_Object"></span></p>
+      <p style="font-size: 22px;">Accuracy : <span id="display_Accuracy"></span></p>
     </center>
 
   </div>
