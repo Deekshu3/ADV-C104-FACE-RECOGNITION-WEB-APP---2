@@ -1,4 +1,4 @@
-webcam.set({
+Webcam.set({
     width:350,
     height:300,
     image_format:'png',
@@ -15,9 +15,20 @@ function take_snapshot()
 });}
 
 console.log("ml5 version= ",ml5.version);
-classifier = ml5.imageClassifier('https://drive.google.com/file/d/13pcv3gAQ-ad4zcdvFw8WvX1Kb1D28cDM/view',modelLoaded);
+classifier = ml5.imageClassifier('https://drive.google.com/file/d/1wImQoMrVPIBptOeZn6GxwsMs-5BiLwx_/view',modelLoaded);
 
 function check() {
     img=document.getElementById("image");
     classifier.classify(img,gotResult);
+}
+
+function gotResult(error,results){
+    if(error){
+        console.error(error); 
+    }
+    else{
+        console.log(results);
+        document.getElementById("display_object").innerHTML=results[0].label;
+        document.getElementById("display_accuracy").innerHTML=results[0].confidence.toFixed(3);
+    }
 }
